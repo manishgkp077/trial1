@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        * {margin: 0px;padding: 0px;box-sizing: border-box;outline: none;}
+        .wrpr {display: flex;justify-content: center;align-items: center;width: 100vw;height: 100vh;}
+        .formgroup {margin-bottom: 10px;}
+        input[type="submit"] {padding: 5px 10px;cursor: pointer;}
+    </style>
+    <script>
+        function data() {
+
+            var username = document.querySelector('#username').value;
+            var contact = document.querySelector('#contact').value;
+            var userpass = document.querySelector('#userpass').value;
+            var cnfrmpass = document.querySelector('#cnfrmpass').value;
+            if(username == "" || contact == "" || userpass == "" || cnfrmpass == "") {
+                alert('Please fill all fields');
+                return false;
+            }
+            else if(contact.length < 10 || contact.length > 10) {
+                alert('Please enter 10 digits');
+                return false;
+            }
+            else if(isNaN(contact)) {
+                alert('Contact Number should be in number formate');
+                return false;
+            }
+            else if(userpass != cnfrmpass) {
+                alert('Password does not matched');
+                return false;
+            }
+            else {
+                true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrpr">
+        <div class="frmsc">
+            <form onsubmit='return data()' action="output.html" id="userform">
+                <div class="formgroup">
+                    <input type="text" name="username" id="username"/>
+                    <label for="username">User Name</label>
+                </div>
+                <div class="formgroup">
+                    <input type="text" name="contact" id="contact"/>
+                    <label for="contact">Contact</label>
+                </div>
+                <div class="formgroup">
+                    <input type="password" name="userpass" id="userpass"/>
+                    <label for="userpass">Password</label>
+                </div>
+                <div class="formgroup">
+                    <input type="password" name="cnfrmpass" id="cnfrmpass"/>
+                    <label for="cnfrmpass">Confirm Password</label>
+                </div>
+                <div class="formgroup">
+                    <input type="submit" id="submit" value="Submit Here">
+                </div>
+    
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
