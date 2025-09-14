@@ -1,0 +1,132 @@
+/* fonts */
+body { font-family: 'Ali Nastaliq',arial,sans-serif; font-weight: 400; font-style:normal; }
+.sitemain{ max-width: 930px; margin: auto; width: 100%; }
+.grid-position{ display: flex; flex-wrap: wrap; }
+.manage-space{ justify-content: space-between; }
+.grid-size { width: 100%; height: auto; }
+.grid-section { padding: 5px 0px; box-sizing: border-box; }
+.grid-section > h2 { text-align: right; font-size: 20px; color: #000; line-height: 20px; padding: 20px 0px; font-weight: bold;box-sizing: border-box;}
+.grid-layout { width: 50%; }
+.layout { width: 50%;}
+.layout li { overflow: hidden; width: 49%; padding-bottom: 20px; box-sizing: border-box; }
+.layout li:nth-child(2n) { margin-right: 0px; }
+.layout li h3 { font-size: 18px;font-weight: bold; color: #000; line-height: 20px; }
+.grid-adds { width: 48%; position: relative; }
+.grid-img { position: relative; }
+/* ================== on hover show border on grid ========================== */
+.hovershow {display: none;}
+.layout li:hover .hovershow{ display: block; height: 60%; position: absolute; right:10px; top:10px; bottom:10px; left:10px; border-radius: 0 40px 0 40px; border:2px solid #fff}
+.layout li:hover .hovershow:before{content:''; background:url(../images/blq-img.png) no-repeat; width:40px; height: 35px; position: absolute;     top: -10px; left: -10px; z-index: 2;}
+.layout li:hover .hovershow:after{content:''; background:url(../images/blq-img.png) no-repeat; width:40px; height: 35px; position: absolute;     bottom: -10px; right: -10px; z-index: 2; transform: rotate(-180deg);}
+.grid-info { position: absolute; top: 38px; width: 100%; text-align: right; left: -63px; z-index: 1; }
+.layout li:nth-child(2) .grid-info { position: absolute; top: 38px; width: 100%; text-align: right; left: -45px; }
+.grid-info h2 { font-size: 16px; font-weight: bold; color: #fff; line-height: 20px; }
+.grid-info strong { font-size: 16px; color: #fff; font-weight: bold; line-height: 20px; display: block; }
+.grid-info span { font-size: 10px; color: #f5f5f5; line-height: 20px; display: block; }
+.section-logo { width: 60px; height: 25px; position: absolute; z-index: 3; }
+.grid-logo{ bottom: 15px; left: 8px; }
+.grid-adds .adds-size { width: 100%; }
+.socialicons { background-color: #000; width: 60%; height: 30px; position: absolute; z-index: 3; border-top-left-radius: 8px; border-bottom-left-radius: 8px; box-sizing: border-box; padding: 5px; }
+.grid-social-icons { right: 0px; bottom: 3px;}
+.sprites { background: url("../images/sprite.png") left top no-repeat; display: inline-block; height: 17px;}
+.fb { background-position: 2px 3px; width: 9px;}
+.twt { background-position: -10px 3px; width: 16px;}
+.insta {background-position: -29px 3px; width: 16px;}
+.whatsapp { background-position: -45px 3px; width: 16px;}
+.socialicons a { line-height: 30px; display: inline-block; }
+.socialicons strong {  text-transform: uppercase; font-size: 10px;  color: #fff; line-height: 25px; }
+.addscontainer { position: relative; }
+.adds-info { position: absolute; top: 35px; width: 100%; box-sizing: border-box; overflow: hidden; width: 100%; text-align: right; left: -134px;
+}
+.adds-info h2 { font-size: 30px; font-weight: bold; color: #000; line-height: 30px;}
+.adds-info strong { font-size: 30px; color: #000; font-weight: bold; line-height: 30px; display: block; }
+.adds-info span { font-size: 14px; color: #e50a22;  line-height: 30px; display: block; }
+.grid-adds h3 { font-size: 20px; color: #000; line-height: 30px; margin: 5px 0px; font-weight: bold; text-align: right; }
+.adds-social-icons { right: 0px; bottom: 3px; }
+.adds-logo { bottom: 15px; left: 15px; }
+
+/* ============== One Liner section =============== */
+.oneLiner-section { padding: 20px 0px 0px; box-sizing: border-box; }
+.borderbottom { position: relative; }
+.borderbottom:after { content: ""; background: #ccc url("../images/borderbottom.png") left top repeat-x; display: block; height: 1px;width: 100%;}
+.oneLiner-section > h2 {text-align: right; font-size: 20px; color: #000;line-height: 30px;font-weight: bold; border-bottom: 3px solid #000;
+position: relative;}
+.oneLiner-section > h2:after { content: ""; position: absolute;right: 0px; bottom: -4px; background-color: #e50a22; height: 6px;width: 25px;}
+.oneLiner-section .layout {width: 100%;padding: 20px 0px 10px; box-sizing: border-box;}
+.oneLiner-section .layout li { width: 24%;}
+.readmore { font-size: 14px; font-weight: normal;color: #001536; text-decoration: none; position: relative;display: block;padding-left: 22px;}
+.readmore:before { content: ""; background: url("../images/readmore.png") left top no-repeat;height: 16px; width: 16px; display: inline-block;
+    position: absolute; left: 0px; top: -1px; }
+
+/* ========================== Shayri Section ========================= */
+.shayri-section {padding: 20px 0px 0px; box-sizing: border-box; }
+.shayri-section > h2 { text-align: right; font-size: 20px; color: #000; line-height: 30px; font-weight: bold; border-bottom: 3px solid #000;
+position: relative;}
+.shayri-section > h2:after {content: ""; position: absolute; right: 0px; bottom: -4px; background-color: #e50a22; height: 6px; width: 25px;}
+.shayri-section .layout { width: 100%;padding: 20px 0px 10px; box-sizing: border-box; }
+.shayri-section .layout li { width: 24%;}
+.shayri-section ul li .grid-info, .shayri-section ul li:nth-child(2) .grid-info { height: 80%;width: 80%;transform: translate(-50%, -60%);
+    top: 50%; left: 50%; box-sizing: border-box; text-align: right; justify-content: center;align-items: center; border-radius: 100%; flex-wrap: wrap;   display: flex;}
+.shayri-section ul li:first-child .grid-info { background: #121216; }
+.shayri-section ul li:nth-child(2) .grid-info { background: #022958; }
+.shayri-section ul li:nth-child(3) .grid-info { background: #022958; }
+.shayri-section ul li:nth-child(4) .grid-info { background: #121216; }
+.shayri-section ul li .grid-info .shayri { padding: 5px 25px 5px 12px; box-sizing: border-box;}
+.shayri-section ul li .grid-info p { font-size: 8px; color: #fff; line-height: 12px; font-weight: normal;}
+.shayri-section ul li .grid-info .shayri span { color: #ef6cb1;}
+
+/* ================= Blog Section ======================== */
+.blog-section {  padding: 20px 0px 20px;  box-sizing: border-box; }
+.blog-section > h2 { text-align: right; font-size: 20px; color: #000; line-height: 30px; font-weight: bold; border-bottom: 3px solid #000;
+    position: relative;}
+.blog-section > h2:after { content: ""; position: absolute; right: 0px; bottom: -4px; background-color: #e50a22; height: 6px; width: 25px;}
+.blog-section .layout { width: 100%; padding: 20px 0px 10px; box-sizing: border-box; }
+.blog-section .layout li { width: 24%;}
+.blog-section .layout li .grid-info { position: absolute; top: 38px; width: 100%; text-align: right; left: -35px;}
+
+/* ================= Media query starts here ========================== */
+@media all and (max-width: 1023px) {
+    .layout li:hover .hovershow {height: 62%;}
+    .grid-section > h2 { padding: 20px 5px; }
+    .grid-info { top: 25px; left: -25px; }
+    .layout li:nth-child(2) .grid-info {  top: 25px; left: -18px;}
+    .section-logo { width: 40px; height: auto;}
+    .socialicons { width: 72%;}
+    .addscontainer .adds-logo {  width: 70px;}
+    .grid-info h2, .grid-info strong {font-size: 13px; line-height: 16px; }
+    .grid-info span { line-height: 18px; }
+    .oneLiner-section .layout li {width: 24.25%; }
+    .layout li h3 {  font-size: 15px; padding: 0px 5px; box-sizing: border-box;}
+    .grid-adds h3 { padding: 0px 5px; box-sizing: border-box; }
+    .shayri-section ul li .grid-info p { font-size: 6px; line-height: 8px; }
+    .blog-section .layout li .grid-info, .blog-section .layout li:nth-child(2) .grid-info { top: 25px; left: -18px; }
+}
+@media all and (max-width: 767px) {
+    .hovershow {display: none;}
+    .layout li:hover .hovershow{ display: none;}
+    .grid-section, .oneLiner-section, .shayri-section, .blog-section { padding: 5px;}
+    .layout { width: 100%; }
+    .grid-size { width: 100% }
+    .layout li { width: 49%;}
+    .layout li h3 { padding: 0px 5px; box-sizing: border-box;}
+    .grid-adds { width: 100%; }
+    .grid-info h2, .grid-info strong {font-size: 13px; line-height: 16px; }
+    .grid-info span { line-height: 18px; }
+    .oneLiner-section .layout li, .shayri-section .layout li, .blog-section .layout li { width: 49%; }
+    .section-logo { width: 45px; height: auto; }    
+    .shayri-section ul li .grid-info p {font-size: 11px; line-height: 14px; }    
+}
+
+@media all and (max-width: 600px) {
+    .shayri-section ul li .grid-info p { font-size: 8px; }
+    
+}
+
+@media all and (max-width: 475px) {
+    .layout li {  width: 100%;}
+    .oneLiner-section .layout li, .shayri-section .layout li, .blog-section .layout li { width: 100%; }
+    .adds-info { left: -60px; }
+    .adds-info h2, .adds-info strong { font-size: 25px;}
+    .adds-info span { font-size: 12px; }
+    .grid-adds h3 {  font-size: 15px; line-height: 25px;}    
+}
